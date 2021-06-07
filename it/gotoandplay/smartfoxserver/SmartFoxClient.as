@@ -917,7 +917,7 @@ package it.gotoandplay.smartfoxserver
             var evt:SFSEvent;
             if (this.debug)
             {
-                trace(message);
+                // trace(message);
                 evt = new SFSEvent(SFSEvent.onDebugMessage, {"message":message});
                 dispatchEvent(evt);
             };

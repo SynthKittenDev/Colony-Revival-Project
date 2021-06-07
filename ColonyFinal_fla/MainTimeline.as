@@ -5,56 +5,63 @@
 
 package ColonyFinal_fla
 {
-    import flash.display.MovieClip;
-    import flash.text.TextField;
-    import fl.controls.Button;
-    import flash.display.SimpleButton;
-    import fl.controls.ComboBox;
-    import fl.controls.CheckBox;
-    import flash.utils.Dictionary;
-    import flash.display.DisplayObject;
-    import flash.text.TextFormat;
-    import flash.geom.Rectangle;
-    import flash.net.URLRequest;
-    import flash.display.Loader;
-    import flash.ui.ContextMenu;
-    import flash.net.SharedObject;
-    import flash.utils.Timer;
-    import flash.display.Sprite;
-    import flash.filters.GlowFilter;
-    import flash.ui.Mouse;
-    import flash.events.Event;
-    import flash.events.ProgressEvent;
-    import flash.events.MouseEvent;
-    import flash.events.TimerEvent;
-    import com.jiggmin.blossomSocket.BlossomEvent;
-    import flash.net.navigateToURL;
-    import com.jiggmin.SocketManager;
-    import flash.text.TextFieldAutoSize;
-    import flash.events.KeyboardEvent;
-    import fl.data.DataProvider;
-    import fl.data.SimpleCollectionItem;
-    import flash.display.StageScaleMode;
-    import flash.system.Security;
-    import fl.controls.*;
-    import flash.display.*;
-    import flash.events.*;
-    import flash.utils.*;
-    import flash.net.*;
-    import flash.text.*;
-    import flash.media.*;
-    import flash.geom.*;
-    import flash.ui.*;
-    import flash.filters.*;
-    import flash.system.*;
-    import adobe.utils.*;
-    import flash.accessibility.*;
-    import flash.errors.*;
-    import flash.external.*;
-    import flash.printing.*;
-    import flash.profiler.*;
-    import flash.sampler.*;
-    import flash.xml.*;
+	
+import flash.net.URLLoader;
+import it.gotoandplay.smartfoxserver.*;
+import com.jiggmin.blossomSocket.*;
+import fl.data.*;
+import com.jiggmin.*;
+import flash.display.MovieClip;
+import flash.text.TextField;
+import fl.controls.Button;
+import flash.display.SimpleButton;
+import fl.controls.ComboBox;
+import fl.controls.CheckBox;
+import flash.utils.Dictionary;
+import flash.display.DisplayObject;
+import flash.text.TextFormat;
+import flash.geom.Rectangle;
+import flash.net.URLRequest;
+import flash.display.Loader;
+import flash.ui.ContextMenu;
+import flash.net.SharedObject;
+import flash.utils.Timer;
+import flash.display.Sprite;
+import flash.filters.GlowFilter;
+import flash.ui.Mouse;
+import flash.events.Event;
+import flash.events.ProgressEvent;
+import flash.events.MouseEvent;
+import flash.events.TimerEvent;
+import com.jiggmin.blossomSocket.BlossomEvent;
+import flash.net.navigateToURL;
+import com.jiggmin.SocketManager;
+import flash.text.TextFieldAutoSize;
+import flash.events.KeyboardEvent;
+import fl.data.DataProvider;
+import fl.data.SimpleCollectionItem;
+import flash.display.StageScaleMode;
+import flash.system.Security;
+import fl.controls.*;
+import flash.display.*;
+import flash.events.*;
+import flash.utils.*;
+import flash.net.*;
+import flash.text.*;
+import flash.media.*;
+import flash.geom.*;
+import flash.ui.*;
+import flash.filters.*;
+import flash.system.*;
+import adobe.utils.*;
+import flash.accessibility.*;
+import flash.errors.*;
+import flash.external.*;
+import flash.printing.*;
+import flash.profiler.*;
+import flash.sampler.*;
+import flash.xml.*;
+import it.gotoandplay.smartfoxserver.SmartFoxClient;
 
     public dynamic class MainTimeline extends MovieClip 
     {
@@ -80,8 +87,12 @@ package ColonyFinal_fla
         public var ag_lockBut:SimpleButton;
         public var r_i4:TextField;
         public var chatToWho:TextField;
+		public var OfflineA:TextField;
+		public var OfflineB:TextField;
+		public var success:Boolean;
         public var j_server2:Button;
         public var butmis_6:Button;
+		public var butmis_7:Button;
         public var d_mc6:MovieClip;
         public var dateMC:MovieClip;
         public var r_e1:TextField;
@@ -304,7 +315,9 @@ package ColonyFinal_fla
         public var minBound:uint;
         public var maxBound:uint;
         public var mouseAccel:Number;
+		public var mouseAccelFaster:Number;
         public var mouseMaxVel:Number;
+		public var mouseMaxVelFaster:Number;
         public var mouseVel:Number;
         public var teamWin:Team;
         public var winGame:Boolean;
@@ -315,6 +328,7 @@ package ColonyFinal_fla
         public var dif:uint;
         public var be:uint;
         public var v2:*;
+		private var smartFox:SmartFoxClient;
         public var aiProfile:uint;
         public var mouseLasso:Sprite;
         public var drawing:Boolean;
@@ -443,8 +457,9 @@ package ColonyFinal_fla
             gotoAndStop("MISSION", "SCENE");
         }
 
-        public function startMultiPlayer(Event:MouseEvent):void
+        public function startMultiPlayer(_arg_1:MouseEvent):void
         {
+			var ServerStatusCheck:URLLoader;
             if (((DomainChecker.isDomain(stage, "armorgames.com", "ungrounded.net", "kongregate.com")) || (testMode)))
             {
                 singlePlayerMode = false;
@@ -452,7 +467,10 @@ package ColonyFinal_fla
                 MP_team = 2;
                 MP_color = 0;
                 dataTracer.clearTracer();
-                startMpConnect(0, true);
+                ServerStatusCheck = new URLLoader();
+                ServerStatusCheck.addEventListener(Event.COMPLETE, completeHandler);
+                ServerStatusCheck.load(new URLRequest("https://colony-game.000webhostapp.com/status.php"));
+                gotoAndStop("SERVER", "SCENE");
             }
             else
             {
@@ -461,7 +479,10 @@ package ColonyFinal_fla
                 MP_team = 2;
                 MP_color = 0;
                 dataTracer.clearTracer();
-                startMpConnect(0, true);
+                ServerStatusCheck = new URLLoader();
+                ServerStatusCheck.addEventListener(Event.COMPLETE, completeHandler);
+                ServerStatusCheck.load(new URLRequest("https://colony-game.000webhostapp.com/status.php"));
+                gotoAndStop("SERVER", "SCENE");
             };
         }
 
@@ -543,6 +564,13 @@ package ColonyFinal_fla
             clientPlayer = new Array(1, 1, 1);
             gotoStory(5, 6);
         }
+		
+        public function gotoMission7(me:MouseEvent):void
+        {
+            playerName = "Moston";
+            clientPlayer = new Array(1, 1, 1);
+            gotoStory(6, 7);
+        }
 
         public function gotoStory(a:uint, b:uint):void
         {
@@ -557,7 +585,7 @@ package ColonyFinal_fla
 
         public function s_Con0(me:MouseEvent):void
         {
-            startMpConnect(0);
+            startMpConnect(0, true);
         }
 
         public function s_Con1(me:MouseEvent):void
@@ -683,7 +711,7 @@ package ColonyFinal_fla
             }
             else
             {
-                if (missionLevel == 6)
+                if (missionLevel == 7)
                 {
                     this.gotoAndStop("MISSION", "SCENE");
                 }
@@ -1726,7 +1754,7 @@ package ColonyFinal_fla
         {
             var juh:*;
             var uNameRank:String;
-            var rankST:String;
+				
             var subber:Array;
             var tt:String;
             var nextString:String;
@@ -1795,6 +1823,19 @@ package ColonyFinal_fla
                 {
                     screenGoLeft = true;
                 };
+				
+				if (event.keyCode == 71)
+				{
+					screenPoint = endPoint2;
+					mouseVel = 0;
+				};
+				
+				if (event.keyCode == 70)
+				{
+					screenPoint = endPoint1;
+					mouseVel = 0;
+				};
+				
                 if (((event.keyCode == 39) || (event.keyCode == 68)))
                 {
                     screenGoRight = true;
@@ -2184,11 +2225,11 @@ package ColonyFinal_fla
             {
                 if (missionOn)
                 {
-                    gotoAndPlay("OutOf2", "MENU");
+                    gotoAndPlay("OutOf2", "SCENE");
                 }
                 else
                 {
-                    gotoAndPlay("OutOf", "MENU");
+                    gotoAndPlay("OutOf", "SCENE");
                 };
             }
             else
@@ -2202,6 +2243,19 @@ package ColonyFinal_fla
         public function getAGURL(me:MouseEvent):void
         {
             var urlAGL:String = "https://colony-game.000webhostapp.com/status.php";
+            var reqAGL:URLRequest = new URLRequest(urlAGL);
+            try
+            {
+                navigateToURL(reqAGL, "_blank");
+            }
+            catch(e:Error)
+            {
+            };
+        }
+		
+        public function getDiscordURL(me:MouseEvent):void
+        {
+            var urlAGL:String = "https://discord.gg/HxhyyAb";
             var reqAGL:URLRequest = new URLRequest(urlAGL);
             try
             {
@@ -2765,6 +2819,35 @@ package ColonyFinal_fla
                 };
             };
         }
+		
+        //internal function __setProp_butmis_7_MENU_MENU_20():*
+        //{
+        //    if (((__setPropDict[butmis_7] == undefined) || (!(int(__setPropDict[butmis_7]) == 21))))
+        //    {
+        //        __setPropDict[butmis_7] = 21;
+        //        try
+        //        {
+        //            butmis_7["componentInspectorSetting"] = true;
+        //        }
+        //        catch(e:Error)
+        //        {
+        //        };
+        //        butmis_7.emphasized = false;
+        //        butmis_7.enabled = true;
+        //        butmis_7.label = "Mission 7";
+        //        butmis_7.labelPlacement = "right";
+        //        butmis_7.selected = false;
+        //        butmis_7.toggle = false;
+        //        butmis_7.visible = true;
+        //        try
+        //        {
+        //            butmis_7["componentInspectorSetting"] = false;
+        //        }
+        //        catch(e:Error)
+        //        {
+        //        };
+        //    };
+        //}
 
         internal function __setProp_j_server1_MENU_MENU_21():*
         {
@@ -3533,10 +3616,18 @@ package ColonyFinal_fla
             singleLevel = 0;
             tutLev = false;
             onlineServers = new Array("127.0.0.1:25565", "127.0.0.1:25565", "127.0.0.1");
-            serverNames = new Array("Glastondale", "Beatrix", "Jetzul");
+            serverNames = new Array("USNorth Server", "USEast Server", "Placeholder");
             MP_r2j = false;
             disconnectedHandler2 = new Function();
         }
+		
+		internal function completeHandler(ServerStatusCheck:Event):void
+		{
+			var CompletedTxT:String = ServerStatusCheck.target.data;
+			OfflineA.text = CompletedTxT;
+			OfflineB.text = CompletedTxT;
+			ServerStatusCheck.removeEventListener(Event.COMPLETE, completeHandler);
+		}
 
         internal function frame20():*
         {
@@ -3570,6 +3661,7 @@ package ColonyFinal_fla
 
         internal function frame21():*
         {
+			// __setProp_butmis_7_MENU_MENU_20();
             __setProp_butmis_6_MENU_MENU_20();
             __setProp_butmis_5_MENU_MENU_20();
             __setProp_butmis_4_MENU_MENU_20();
@@ -3586,14 +3678,16 @@ package ColonyFinal_fla
             butmis_4.setStyle("textFormat", tf);
             butmis_5.setStyle("textFormat", tf);
             butmis_6.setStyle("textFormat", tf);
+			//butmis_7.setStyle("textFormat", tf);
             butmis_1.addEventListener(MouseEvent.CLICK, gotoMission1);
             butmis_2.addEventListener(MouseEvent.CLICK, gotoMission2);
             butmis_3.addEventListener(MouseEvent.CLICK, gotoMission3);
             butmis_4.addEventListener(MouseEvent.CLICK, gotoMission4);
             butmis_5.addEventListener(MouseEvent.CLICK, gotoMission5);
             butmis_6.addEventListener(MouseEvent.CLICK, gotoMission6);
+			//butmis_7.addEventListener(MouseEvent.CLICK, gotoMission7);
             gh = 1;
-            while (gh < 7)
+            while (gh < 8)
             {
                 if (missionMax < gh)
                 {
@@ -4006,7 +4100,9 @@ package ColonyFinal_fla
             minBound = Math.round((stage.stageWidth * boundLimit));
             maxBound = Math.round((stage.stageWidth * (1 - boundLimit)));
             mouseAccel = 1.25;
+			mouseAccelFaster = 5;
             mouseMaxVel = 35;
+			mouseMaxVelFaster = 50;
             mouseVel = 0;
             winGame = false;
             aiSetArray = new Array(GameKon.player1, GameKon.player2, GameKon.player3, GameKon.player4);
@@ -4442,7 +4538,7 @@ package ColonyFinal_fla
             __setProp_button_res_POST_Layer1_33();
             if (winGame)
             {
-                if (((missionMax == missionLevel) && (missionMax < 6)))
+                if (((missionMax == missionLevel) && (missionMax < 7)))
                 {
                     missionMax++;
                     saveGame.data.al = missionMax;

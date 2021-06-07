@@ -1,9 +1,4 @@
-﻿// Decompiled by AS3 Sorcerer 6.30
-// www.as3sorcerer.com
-
-//ColonyFinal_fla.MPScreenCounter_230
-
-package ColonyFinal_fla
+﻿package ColonyFinal_fla
 {
     import flash.display.MovieClip;
     import flash.display.*;
@@ -37,10 +32,9 @@ package ColonyFinal_fla
 
         internal function frame165():*
         {
-            basic.gotoAndStop("Game", "SCENE");
+            this.basic.gotoAndStop("Game", "SCENE");
         }
 
 
     }
 }//package ColonyFinal_fla
-

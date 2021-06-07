@@ -191,7 +191,7 @@ package
             if (noMoreDanger > 0)
             {
                 noMoreDanger--;
-                trace(("NMD " + noMoreDanger));
+                // trace(("NMD " + noMoreDanger));
             };
             if (noMoreUpgrade > 0)
             {
@@ -609,7 +609,7 @@ package
                         {
                             if (noMoreDanger == 0)
                             {
-                                trace("BOO");
+                                // trace("BOO");
                                 previousDanger = a;
                                 previousAction = 6;
                                 noMoreDanger = 80;

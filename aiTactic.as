@@ -254,7 +254,7 @@ package
                     a.push(new aiOrder(5, 10));
                     a.push(new aiOrder(15, 2));
                     a.push(new aiOrder(35, 10));
-                    trace("Go Make Units!");
+                    // trace("Go Make Units!");
                     break;
                 case 27:
                     a.push(new aiOrder(21, 2));

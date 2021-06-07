@@ -34,7 +34,7 @@ package com.jiggmin
             {
                 _socket.removeEventListener(Event.CLOSE, socketCloseHandler);
                 _socket.removeEventListener(BlossomEvent.ERROR, socketErrorHandler);
-                trace("close socket");
+                // trace("close socket");
                 _socket.remove();
                 _socket = null;
             };

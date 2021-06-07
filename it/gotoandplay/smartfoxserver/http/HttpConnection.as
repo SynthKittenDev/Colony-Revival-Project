@@ -75,7 +75,7 @@ package it.gotoandplay.smartfoxserver.http
                 urlRequest.data = vars;
                 if (message != "poll")
                 {
-                    trace(("[ Send ]: " + urlRequest.data));
+                    // trace(("[ Send ]: " + urlRequest.data));
                 };
                 urlLoader = urlLoaderFactory.getLoader();
                 urlLoader.data = vars;
@@ -102,7 +102,7 @@ package it.gotoandplay.smartfoxserver.http
                 }
                 else
                 {
-                    trace("**ERROR** SessionId is being rewritten");
+                    // trace("**ERROR** SessionId is being rewritten");
                 };
             }
             else

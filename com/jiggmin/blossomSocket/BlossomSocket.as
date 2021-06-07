@@ -316,7 +316,7 @@ package com.jiggmin.blossomSocket
 
         private function errorHandler(be:BlossomEvent):void
         {
-            trace(("Error: " + be.error));
+            // trace(("Error: " + be.error));
             if (be.roomName != null)
             {
                 dispatchEvent(new BlossomEvent((BlossomEvent.ERROR + be.roomName), be.raw));

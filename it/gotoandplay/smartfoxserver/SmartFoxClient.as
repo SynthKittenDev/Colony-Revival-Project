@@ -1110,7 +1110,7 @@ package it.gotoandplay.smartfoxserver
             if (((roomList == null) || (roomList.length == 0)))
             {
                 success = false;
-                errorTrace("The room list is empty!\nThe client API cannot function properly until the room list is populated.\nPlease consult the documentation for more infos.");
+                // errorTrace("The room list is empty!\nThe client API cannot function properly until the room list is populated.\nPlease consult the documentation for more infos.");
             };
             return (success);
         }
@@ -1121,17 +1121,17 @@ package it.gotoandplay.smartfoxserver
             if (activeRoomId < 0)
             {
                 success = false;
-                errorTrace("You haven't joined any rooms!\nIn order to interact with the server you should join at least one room.\nPlease consult the documentation for more infos.");
+                // errorTrace("You haven't joined any rooms!\nIn order to interact with the server you should join at least one room.\nPlease consult the documentation for more infos.");
             };
             return (success);
         }
 
         private function errorTrace(msg:String):void
         {
-            trace("\n****************************************************************");
-            trace("Warning:");
-            trace(msg);
-            trace("****************************************************************");
+            // trace("\n****************************************************************");
+            // trace("Warning:");
+            // trace(msg);
+            // trace("****************************************************************");
         }
 
         private function handleHttpConnect(evt:HttpEvent):void

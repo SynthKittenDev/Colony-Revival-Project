@@ -83,7 +83,7 @@ package com.jiggmin.blossomSocket
                 write(sendStr);
                 if (traceTraffic)
                 {
-                    trace(("write: " + strObj));
+                    // trace(("write: " + strObj));
                     dataTracer.update(("write: " + strObj));
                 };
             }
@@ -137,7 +137,7 @@ package com.jiggmin.blossomSocket
             if (traceTraffic)
             {
                 dataTracer.update(("received: " + stringVars));
-                trace(("received: " + stringVars));
+                // trace(("received: " + stringVars));
             };
             var obj:Object = com.adobe.serialization.json.JSON.decode(stringVars);
             handleMessage(obj);

@@ -68,7 +68,7 @@ package it.gotoandplay.smartfoxserver.handlers
             }
             else
             {
-                trace(("Unknown sys command: " + action));
+                // trace(("Unknown sys command: " + action));
             };
         }
 

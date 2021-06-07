@@ -17,7 +17,7 @@ package com.jiggmin.blossomSocket
 
         override public function connect(url:String, port:int):void
         {
-            trace(((("connect: " + url) + " ") + port));
+            // trace(((("connect: " + url) + " ") + port));
             dataTracer.update("Connecting to Server...");
             addListeners();
             super.connect(url, port);
@@ -39,13 +39,13 @@ package com.jiggmin.blossomSocket
 
         protected function connectHandler(e:Event):void
         {
-            trace("Connected.");
+            // trace("Connected.");
             dataTracer.update("Connected!");
         }
 
         protected function closeHandler(e:Event):void
         {
-            trace("Disconnected.");
+            // trace("Disconnected.");
             dataTracer.DC();
             remove();
         }
@@ -54,14 +54,14 @@ package com.jiggmin.blossomSocket
         {
             dataTracer.noMoreProgress();
             dataTracer.update("IO Error: Could not connect. This could be because: A: The server is broken. B: The internet is broken. C: Evil aliens.");
-            trace("Could not connect. This could be because: A: The server is broken. B: The internet is broken. C: Evil aliens.");
+            // trace("Could not connect. This could be because: A: The server is broken. B: The internet is broken. C: Evil aliens.");
         }
 
         protected function securityErrorHandler(e:SecurityErrorEvent):void
         {
             dataTracer.noMoreProgress();
             dataTracer.update("Security Error: Couldn't get permission to connect to server.");
-            trace("Couldn't get permission to connect to server.");
+            // trace("Couldn't get permission to connect to server.");
         }
 
         protected function socketDataHandler(e:ProgressEvent):void

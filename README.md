@@ -22,6 +22,7 @@ Alright, let's go over some things here:
   
   - When finishing a match online or offline, the defeat/victory screen button does nothing. Code-related issue.
   - Various graphics are not layered properly, meaning certain parts of the vector graphics appear under or above certain other objects incorrectly.
+  - If you don't have the games original fonts, fonts will instead use your systems default font and things will appear incorrectly aligned. I recommend finding and using the games original fonts online.
 
 - This was uploaded under the knowledge that Krin the original developer is understandably okay with this and fine with us creating a private server to continue his marvelous game forever with multiplayer. I'm sure he wouldn't mind us also improving upon his 12 year old game like this!
 

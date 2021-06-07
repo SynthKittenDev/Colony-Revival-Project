@@ -130,7 +130,7 @@ package
                     boss = (Math.round(((LIST2[i][checkData[j]] / this.mul) * 1000)) / 1000);
                     if (LIST[i][checkData[j]] != boss)
                     {
-                        trace(((("UNIT: " + LIST[i][checkData[j]]) + " -- ") + boss));
+                        // trace(((("UNIT: " + LIST[i][checkData[j]]) + " -- ") + boss));
                         return (true);
                     };
                 };

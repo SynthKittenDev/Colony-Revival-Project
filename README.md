@@ -4,6 +4,14 @@ Welcome to the Colony Revival Project github! This is a page where you can revie
 
 This is a team effort we need to be able to get full-access to the code so the community and programmers apart of it can help improve the games overall quality & to improve upon its already great foundation.
 
+# How to help Colony Revival Project
+
+To help, begin by reviewing the existing code for improvements that could be made. Features can be suggested under the 'Discussions' tab or the official Discord server.
+
+Use pull requests & other methods of communicating to submit potential changes and feedback to the existing codebase. If you've made improvements to the .FLA file, please submit it as well with what you've changed or updated.
+
+View what needs to be worked on under the 'Projects' tab. 
+
 # How to Compile Colony Revival Project
 
 1. Download and Install Adobe Flash Professional CS6!

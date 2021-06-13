@@ -1,6 +1,3 @@
-﻿// Decompiled by AS3 Sorcerer 6.30
-// www.as3sorcerer.com
-
 //ColonyFinal_fla.MainTimeline
 
 package ColonyFinal_fla
@@ -1754,7 +1751,7 @@ import it.gotoandplay.smartfoxserver.SmartFoxClient;
         {
             var juh:*;
             var uNameRank:String;
-				
+	    var rankST:String;			
             var subber:Array;
             var tt:String;
             var nextString:String;
@@ -3631,7 +3628,7 @@ import it.gotoandplay.smartfoxserver.SmartFoxClient;
 			var CompletedTxT:String = ServerStatusCheck.target.data;
 			OfflineA.text = CompletedTxT;
 			OfflineB.text = CompletedTxT;
-			ServerStatusCheck.removeEventListener(Event.COMPLETE, completeHandler);
+			// ServerStatusCheck.removeEventListener(Event.COMPLETE, completeHandler);
 		}
 
         internal function frame20():*

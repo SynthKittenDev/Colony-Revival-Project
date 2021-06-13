@@ -1489,7 +1489,7 @@ import it.gotoandplay.smartfoxserver.SmartFoxClient;
             {
                 if (((!(i3 == 0)) && (player.team.all[i3].player == player)))
                 {
-                    unitKon.killOffUnit(player.team.all[i3].unitId, null);
+                    // unitKon.killOffUnit(player.team.all[i3].unitId, null);
                 };
             };
             if (player.hackSend)
@@ -1804,7 +1804,7 @@ import it.gotoandplay.smartfoxserver.SmartFoxClient;
                 };
                 for (juh in hotkeyArray)
                 {
-                    if (event.keyCode == hotkeyArray[juh])
+                    if (event.keyCode == this.hotkeyArray[juh])
                     {
                         if (gameKon.selectedBuilding == null)
                         {
@@ -1812,7 +1812,12 @@ import it.gotoandplay.smartfoxserver.SmartFoxClient;
                         }
                         else
                         {
-                            if ((gameKon.selectedBuilding.ownBy == gameKon.playerNow))
+                            if (((gameKon.selectedBuilding.working) && (gameKon.selectedBuilding.ownBy == gameKon.playerNow)))
+                            {
+                                gameKon.doOption(null, true, false, gameKon.playerNow, gameKon.selectedBuilding);
+                                hotbutArray[juh].doReal();
+                            }
+                            else
                             {
                                 hotbutArray[juh].doReal();
                             };

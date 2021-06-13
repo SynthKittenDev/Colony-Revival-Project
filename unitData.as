@@ -1,4 +1,4 @@
-﻿// Decompiled by AS3 Sorcerer 6.30
+// Decompiled by AS3 Sorcerer 6.30
 // www.as3sorcerer.com
 
 //unitData
@@ -17,7 +17,7 @@ package
 
         public function unitData()
         {
-            this.mul = Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number((1 + (Math.random() * 4))))))))))))))))))))))))));
+            this.mul = Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number(Number((1 + (Math.random() * 4)))))))))))))))))))))))))));
             this.make("Central Base", false, 5000, 0, 0, 3, 1, 15, false, 0, "This is the headquarters. Equipped with powerful defensive weapons.", 0, 0, 3);
             this.make("Marine", false, 62, 3, 1, 0, 0, 16, false, 0, "Light armor. Armed with shock rifles and rockets, effective against both ground and air.", 25, 16.4);
             this.unit.Value = 1;
@@ -68,7 +68,7 @@ package
             this.unit.Value = 6;
             this.unit.deathSound = 3;
             this.make("Far Sniper", false, 120, 4, 16, 0, 23, null, false, 0, "Light armor. Equipped with armor-piercing Heavy Positron rifles, which do exceptional damage to ground units. Massive range, but can't attack air units.", 38, 9.3);
-            this.unit.Value = 3;
+            this.unit.Value = 5;
             this.unit.deathSound = 3;
             this.make("Saint", true, 400, 5, 18, 4, 25, 4, false, 0.2, "Special armor. Armed with anti-air Positron cannons, and rapid ground rifles. Self-repairing technology.", 53, 48.5, 3);
             this.unit.Value = 15;
@@ -79,11 +79,11 @@ package
             this.make("Sphinx", false, 1300, 2, 19, 5, 26, 27, false, 0, "Composite Armor, effective against heavy attacks, but weak against light attacks. Fires anti-special armor shells.", 59, 15, 3);
             this.unit.Value = 15;
             this.unit.deathSound = 4;
-            this.make("Angel", true, 75, 3, 12, 0, null, 29, true, 0, "Light armor. Can heal/repair any friendly air unit.", 59, 15);
-            this.unit.Value = 2;
-            this.unit.deathSound = 4;
+            this.make("Angel", true, 75, 3, 20, 0, null, 29, true, 0, "Light armor. Can heal/repair any friendly air unit.", 59, 15, 3);
+            this.unit.Value = 3;
+            this.unit.deathSound = 6;
             this.make("Mod. Gröditz", false, 500, 2, 7, 2, 28, 28, false, 0, "Modified Chronite (heavy) armor. Armed with dual Mk II machine guns.", 47, 32, 3);
-            this.unit.Value = 7;
+            this.unit.Value = 12;
             this.unit.deathSound = 4;
         }
 
@@ -130,7 +130,7 @@ package
                     boss = (Math.round(((LIST2[i][checkData[j]] / this.mul) * 1000)) / 1000);
                     if (LIST[i][checkData[j]] != boss)
                     {
-                        // trace(((("UNIT: " + LIST[i][checkData[j]]) + " -- ") + boss));
+                        trace(((("UNIT: " + LIST[i][checkData[j]]) + " -- ") + boss));
                         return (true);
                     };
                 };

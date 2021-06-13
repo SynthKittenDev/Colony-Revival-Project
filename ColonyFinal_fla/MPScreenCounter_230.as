@@ -1,4 +1,4 @@
-﻿package ColonyFinal_fla
+package ColonyFinal_fla
 {
     import flash.display.MovieClip;
     import flash.display.*;
@@ -27,12 +27,13 @@
 
         public function MPScreenCounter_230()
         {
+			setTimeout(frame165, 5000 );
             addFrameScript(164, frame165);
         }
 
         internal function frame165():*
         {
-            this.basic.gotoAndStop("Game", "SCENE");
+            basic.gotoAndStop("Game", "SCENE");
         }
 
 

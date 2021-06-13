@@ -1,4 +1,4 @@
-﻿// Decompiled by AS3 Sorcerer 6.30
+// Decompiled by AS3 Sorcerer 6.30
 // www.as3sorcerer.com
 
 //playerKon
@@ -43,14 +43,14 @@ package
         private var dataZone:Array = new Array(4);
         private var dataRegion:Array = new Array(4);
         private var dataPair:Array = new Array(2);
-        public var p_gain:uint;
-        public var m_gain:uint;
-        public var e_gain:uint;
-        public var i_gain:uint;
+        public var p_gain:int;
+        public var m_gain:int;
+        public var e_gain:int;
+        public var i_gain:int;
         private var incomeData:Array = new Array();
         public var builds:Array = new Array();
 
-        public function playerKon(incomeSet:uint=0):void
+        public function playerKon(incomeSet:int=0):void
         {
             var th:*;
             super();
@@ -101,10 +101,10 @@ package
             tech = [0, 0, 0, 0, 0, 0, 0, 0];
         }
 
-        public function getData(a:uint):*
+        public function getData(a:int):*
         {
-            var data_A:uint = uint(((dataSection[a][dataPair[0]] / dataZone[a][dataPair[0]]) + dataRegion[a][dataPair[0]]));
-            var data_B:uint = uint(((dataSection[a][dataPair[1]] / dataZone[a][dataPair[1]]) + dataRegion[a][dataPair[1]]));
+            var data_A:int = int(((dataSection[a][dataPair[0]] / dataZone[a][dataPair[0]]) + dataRegion[a][dataPair[0]]));
+            var data_B:int = int(((dataSection[a][dataPair[1]] / dataZone[a][dataPair[1]]) + dataRegion[a][dataPair[1]]));
             if (data_A == data_B)
             {
                 return (data_B);
@@ -156,6 +156,31 @@ package
                 {
                     setRes(3, 200);
                 };
+                if (getData(3) < 1)
+                {
+                    setRes(3, 0);
+                };
+            };
+            if (res == 2)
+            {
+                if (getData(2) < 1)
+                {
+                    setRes(2, 0);
+                };
+            };
+            if (res == 1)
+            {
+                if (getData(1) < 1)
+                {
+                    setRes(1, 0);
+                };
+            };
+            if (res == 0)
+            {
+                if (getData(0) < 1)
+                {
+                    setRes(0, 0);
+                };
             };
         }
 
@@ -167,7 +192,7 @@ package
         private function fresh(te:TimerEvent):void
         {
             createGap = 0;
-            hackSend = true;
+            hackSend = false;
         }
 
         public function killEvents():void
@@ -210,7 +235,7 @@ package
             coEff = aiGainArray[aiDifficulty];
         }
 
-        public function setIncome(incomeSet:uint=0):void
+        public function setIncome(incomeSet:int=0):void
         {
             gameKon.theStage.addEventListener("income", income);
             race = incomeSet;
@@ -231,6 +256,22 @@ package
                     if (getData(3) > 200)
                     {
                         setRes(3, 200);
+                    };
+                    if (getData(3) < 1)
+                    {
+                        setRes(3, 0);
+                    };
+                    if (getData(2) < 1)
+                    {
+                        setRes(2, 0);
+                    };
+                    if (getData(1) < 1)
+                    {
+                        setRes(1, 0);
+                    };
+                    if (getData(0) < 1)
+                    {
+                        setRes(0, 0);
                     };
                     addRes(0, (m_gain * coEff));
                     addRes(1, (p_gain * coEff));

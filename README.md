@@ -44,8 +44,6 @@ Getting that out of the way, have fun!
 
 **Colony Discord: https://discord.gg/rP8nhm8**
 
-**My Discord:「ＦＥＬＩＸ」「フェリス」#2122**
-
 ------------------------------
 
 Krin is the original author of Colony, and as such, check out his other games and social medias:

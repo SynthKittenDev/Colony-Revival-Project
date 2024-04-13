@@ -23,6 +23,7 @@ Developer Notes and Commentary on all changes are available at the very bottom o
 - **Pride Buffed** (6 -> 7 Damage)
 - **Gladiator Buffed** (15 -> 12 seconds construction time)
 - **New 'Scramble Angel Team' construction option** (Available from the War Sanctum, costs 30 Influence)
+- **S-Marine** has received new sprites
 
 # OTHER CHANGES:
 - Users with an _ in their name, alongside guests, can now talk.
@@ -37,6 +38,11 @@ Developer Notes and Commentary on all changes are available at the very bottom o
 - Pressing 'Cancel' when attempting to login with an Armor Games account will no longer connect you as 'null'.
 - Added a new 'Discord' button to the main menu to invite you to the official colony community server.
 - Hotkeys for all UI elements have been added to their descriptions to better assist new or returning players.
+- Fixed Ally/Enemy Progress Bar "Starting Maxed" in Multiplayer
+- Fixed A27-Pride walking animation
+- Fixed A28-Gladiator walking animation
+- Fixed Far Sniper walking animation
+- Fixed Sniper walking animation
 - You will no longer be disconnected for being AFK in the multiplayer server for 15 minutes.
 - All other bugs that can impact your playing enjoyment have been fixed.
 - All grammatical mistakes have been fixed.

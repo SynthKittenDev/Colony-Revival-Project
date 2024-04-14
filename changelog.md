@@ -81,4 +81,4 @@ Thank you to the entire Colony Community and the Official Colony Discord server 
 
 **Krin (For creating Colony and a lot of childhoods.)**
 
-**Special Thanks To: Clausse10,  trying,  clhkph,  bravedoggo,  hezdog,  DACMiester,  Dastert,  eaglesx,  phantomlurker,  HTC152,  Zelumpy and so many more for all of your support!**
+**Special Thanks To: Clausse10,  trying,  clhkph,  bravedoggo,  hezdog,  DACMiester,  Dastert,  eaglesx,  phantomlurker,  HTC152,  Zelumpy,  Dynamite Ty and so many more for all of your support!**

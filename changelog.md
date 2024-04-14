@@ -28,6 +28,8 @@ Developer Notes and Commentary on all changes are available at the very bottom o
 # OTHER CHANGES:
 - Users with an _ in their name, alongside guests, can now talk.
 
+- Fixed maximizing window visual bug that made the base disappear on the right side.
+- Units will properly stop their movement animation when hitting a wall.
 - 'Gladiator' shooting graphical error has been fixed.
 - 'Null' errors and users being disconnected from a game have been fixed.
 - Using hotkeys to construct a unit or building without canceling the existing queue will properly refund you. 

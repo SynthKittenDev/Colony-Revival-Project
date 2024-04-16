@@ -7,7 +7,7 @@ Developer Notes and Commentary on all changes are available at the very bottom o
 # GAMEPLAY CHANGES
 - Multiplayer functionality has been restored completely! Fully working as intended along with a completely custom server.
 
-- A new hotkey was implemented as an alternative to double clicking, allowing you to select all units of the same type by scrolling with your scroll wheel.
+- A new hotkey was implemented as an alternative to double clicking, allowing you to select all units of the same type by hovering or selecting a unit, and then scrolling with your scroll wheel.
 - Two new hotkeys 'F' and 'G' were added to allow you to instantly go to the very left or the very right sides of the map. 
 - Camera movement overall speed has been greatly increased, allowing you to move around the map quicker.
 - Three new gamemodes (3-Square, 8-Square and Joker) have been added into multiplayer.
@@ -29,6 +29,9 @@ Developer Notes and Commentary on all changes are available at the very bottom o
 - Users with an _ in their name, alongside guests, can now talk.
 
 - Fixed maximizing window visual bug that made the base disappear on the right side.
+- Fixed scrolling the game to the right with the mouse not working when playing maximized
+- Optimized 'selectAll' function, reducing lag when selecting a very large group of units
+- Optimized 'endDraw' function, reducing lag when selecting a very large group of units by dragging a box around them
 - Units will properly stop their movement animation when hitting a wall.
 - 'Gladiator' shooting graphical error has been fixed.
 - 'Null' errors and users being disconnected from a game have been fixed.

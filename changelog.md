@@ -30,6 +30,10 @@ Developer Notes and Commentary on all changes are available at the very bottom o
 
 - Fixed maximizing window visual bug that made the base disappear on the right side.
 - Fixed scrolling the game to the right with the mouse not working when playing maximized
+- Fixed toolTip not scaling properly when you play maximized
+- Fixed button text not scaling properly when you play maximized
+- Fixed dropdown text not scaling properly when you play maximized
+- Fixed unit animation getting stuck in the 'Shooting' animation
 - Optimized 'selectAll' function, reducing lag when selecting a very large group of units
 - Optimized 'endDraw' function, reducing lag when selecting a very large group of units by dragging a box around them
 - Units will properly stop their movement animation when hitting a wall.

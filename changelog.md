@@ -2,7 +2,7 @@
 
 Developer Notes and Commentary on all changes are available at the very bottom of the changelog.
 
-**Last Updated: April 18th, 2024.**
+**Last Updated: April 21st, 2024.**
 
 # GAMEPLAY CHANGES
 - Multiplayer functionality has been restored completely! Fully working as intended along with a completely custom server.

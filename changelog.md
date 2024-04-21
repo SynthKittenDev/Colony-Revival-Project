@@ -11,6 +11,10 @@ Developer Notes and Commentary on all changes are available at the very bottom o
 - Two new hotkeys 'F' and 'G' were added to allow you to instantly go to the very left or the very right sides of the map. 
 - Camera movement overall speed has been greatly increased, allowing you to move around the map quicker.
 - Three new gamemodes (3-Square, 8-Square and Joker) have been added into multiplayer.
+- Added the ability to see how many units you currently have selected when selecting a group of units.
+- Fixed 'right side advantage' where units had their target point (the spot where you shoot) not 
+set correctly and ending up further away than the left side, creating a slight disadvantage to left side players.
+
 
 # UNIT CHANGES:
 - **New 'Angel' unit** (Available from the War Sanctum)<br/><br/>Reload Time: 16 <br/>Range: 120 <br/>Healing: 5 <br/>Cost: 3 Manpower, 6 Energy
@@ -28,6 +32,9 @@ Developer Notes and Commentary on all changes are available at the very bottom o
 # OTHER CHANGES:
 - Users with an _ in their name, alongside guests, can now talk.
 
+- Fixed projectiles potentially overshooting a target slightly due to lag and/or frame skipping
+- Fixed a chat bug that caused the game to crash
+- Fixed a bug where air units sometimes could attack the base with the wrong weapon type by swapping between 'advancing' and 'charging'
 - Fixed maximizing window visual bug that made the base disappear on the right side.
 - Fixed scrolling the game to the right with the mouse not working when playing maximized
 - Fixed toolTip not scaling properly when you play maximized

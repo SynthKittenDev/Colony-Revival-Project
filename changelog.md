@@ -96,6 +96,10 @@ Thank you to the entire Colony Community and the Official Colony Discord server 
 
 **Alpha (For creating this amazing community, seriously, if you didn't do this.. none of this would be here today.)**
 
+**Dynamite Ty (For creating the Mod. Groditz, S-Marine sprites and helping import the new Angel sprite. Thank you for your hard work!)**
+
+**The Brickccentric (For providing the art for the Angel sprite, the new art is wonderful, thank you!)**
+
 **Krin (For creating Colony and a lot of childhoods.)**
 
-**Special Thanks To: Clausse10,  trying,  clhkph,  bravedoggo,  hezdog,  DACMiester,  Dastert,  eaglesx,  phantomlurker,  HTC152,  Zelumpy,  Dynamite Ty and so many more for all of your support!**
+**Special Thanks To: Clausse10,  trying,  clhkph,  bravedoggo,  hezdog,  DACMiester,  Dastert,  eaglesx,  phantomlurker,  Scraiza,  HTC152,  Zelumpy and so many more for all of your support!**

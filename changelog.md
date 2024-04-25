@@ -2,7 +2,7 @@
 
 Developer Notes and Commentary on all changes are available at the very bottom of the changelog.
 
-**Last Updated: April 21st, 2024.**
+**Last Updated: April 24th, 2024.**
 
 # GAMEPLAY CHANGES
 - Multiplayer functionality has been restored completely! Fully working as intended along with a completely custom server.
@@ -32,6 +32,7 @@ set correctly and ending up further away than the left side, creating a slight d
 # OTHER CHANGES:
 - Users with an _ in their name, alongside guests, can now talk.
 
+- Fixed a bug that made the order of which units appear in front or behind each other not work as intended
 - Fixed projectiles potentially overshooting a target slightly due to lag and/or frame skipping
 - Fixed a chat bug that caused the game to crash
 - Fixed a bug where air units sometimes could attack the base with the wrong weapon type by swapping between 'advancing' and 'charging'

@@ -2,7 +2,7 @@
 
 Developer Notes and Commentary on all changes are available at the very bottom of the changelog.
 
-**Last Updated: April 24th, 2024.**
+**Last Updated: April 30th, 2024.**
 
 # GAMEPLAY CHANGES
 - Multiplayer functionality has been restored completely! Fully working as intended along with a completely custom server.
@@ -10,7 +10,7 @@ Developer Notes and Commentary on all changes are available at the very bottom o
 - A new hotkey was implemented as an alternative to double clicking, allowing you to select all units of the same type by hovering or selecting a unit, and then scrolling with your scroll wheel.
 - Two new hotkeys 'F' and 'G' were added to allow you to instantly go to the very left or the very right sides of the map. 
 - Camera movement overall speed has been greatly increased, allowing you to move around the map quicker.
-- Three new gamemodes (3-Square, 8-Square and Joker) have been added into multiplayer.
+- Five new gamemodes (3-Square, 8-Square Joker, Vast and Insurgency) have been added into multiplayer.
 - Added the ability to see how many units you currently have selected when selecting a group of units.
 - Fixed 'right side advantage' where units had their target point (the spot where you shoot) not 
 set correctly and ending up further away than the left side, creating a slight disadvantage to left side players.
@@ -32,6 +32,7 @@ set correctly and ending up further away than the left side, creating a slight d
 # OTHER CHANGES:
 - Users with an _ in their name, alongside guests, can now talk.
 
+- Buffed Communist by fixing AoE not counting toward player kills, preventing them from getting a Communist payout
 - Fixed a bug that made the order of which units appear in front or behind each other not work as intended
 - Fixed projectiles potentially overshooting a target slightly due to lag and/or frame skipping
 - Fixed a chat bug that caused the game to crash

@@ -2,7 +2,7 @@
 
 Developer Notes and Commentary on all changes are available at the very bottom of the changelog.
 
-**Last Updated: May 19th, 2024.**
+**Last Updated: June 3rd, 2024.**
 
 # GAMEPLAY CHANGES
 - Multiplayer functionality has been restored completely! Fully working as intended along with a completely custom server.
@@ -25,7 +25,7 @@ set correctly and ending up further away than the left side, creating a slight d
 - - -
 - **New 'Mod. Groditz' unit** (Available from the Armory)<br/><br/>HP: 350 -> 500 <br/>Damage: 15 -> 19 <br/>Reload Time: 5 -> 3 <br/>Cost: 35 Influence
 - - -
-- **Far Sniper Overhaul**<br/><br/>Reload Time: 90 -> 340 <br/>Projectile Speed: 30 -> 42 <br/>Range: 660 -> 618 <br/>Damage: 90 -> 350 <br/>Cost: 35 -> 50 Influence
+- **Far Sniper Overhaul**<br/><br/>Reload Time: 90 -> 340 <br/>Projectile Speed: 30 -> 42 <br/>Range: 660 -> 618 <br/>Damage: 90 -> 350 <br/>Cost: 35 -> 40 Influence
 - - -
 - **Groditz Buffed** (340 -> 350 HP)
 - **Pride Buffed** (6 -> 7 Damage)
@@ -36,6 +36,11 @@ set correctly and ending up further away than the left side, creating a slight d
 # OTHER CHANGES:
 - Users with an _ in their name, alongside guests, can now talk.
 
+- AI now no longer sends Meditecs, AA Sakatas, Chronite Tanks, Scouts or Marines into base range
+- New Monarchy theme has been added (Composed by me)
+- New commands /help & /mystats have been added to multiplayer lobby	
+- Clicking 'No' on 'Are you sure you want to quit' popup no longer stops hotkeys from working without having to click back into the game
+- Minor alterations to the Groditz death animation
 - Fixed a bug where changing animation states of a unit while it is dying interrupts the death animation
 - Fixed Mission 1 saying Capitalist provides 20% resource bonus instead of 15%
 - Buffed Communist by fixing AoE not counting toward player kills, preventing them from getting a Communist payout

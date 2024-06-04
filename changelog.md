@@ -36,6 +36,8 @@ set correctly and ending up further away than the left side, creating a slight d
 # OTHER CHANGES:
 - Users with an _ in their name, alongside guests, can now talk.
 
+- All visual effects (explosions, shot hit FX, meditec healing sprites) no longer block you from selecting a unit when attempting to left click on it
+- 50% Optimization improvement to mouseEvents when playing using Flash Player
 - AI now no longer sends Meditecs, AA Sakatas, Chronite Tanks, Scouts or Marines into base range
 - New Monarchy theme has been added (Composed by me)
 - New commands /help & /mystats have been added to multiplayer lobby	

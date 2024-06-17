@@ -2,6 +2,8 @@
 
 .FLA file is unable to be uploaded here for unknown reasons, please download it here: https://bit.ly/2RE7v4x
 
+WARNING: This repo is not kept up-to-date with the latest changes because currently there are too many issues to make compiling the game from source worthwhile.
+
 # INFORMATION! (READ THIS)
 
 Welcome to the Colony Revival Project github! This is a page where you can review the code and make changes to help improve Colony forever with bugfixes and improvements to the existing code that I have managed to salvage into a working copy.

@@ -2,7 +2,7 @@
 
 Developer Notes and Commentary on all changes are available at the very bottom of the changelog.
 
-**Last Updated: June 3rd, 2024.**
+**Last Updated: June 17th, 2024.**
 
 # GAMEPLAY CHANGES
 - Multiplayer functionality has been restored completely! Fully working as intended along with a completely custom server.
@@ -27,7 +27,8 @@ set correctly and ending up further away than the left side, creating a slight d
 - - -
 - **Far Sniper Overhaul**<br/><br/>Reload Time: 90 -> 340 <br/>Projectile Speed: 30 -> 42 <br/>Range: 660 -> 618 <br/>Damage: 90 -> 350 <br/>Cost: 35 -> 40 Influence
 - - -
-- **Groditz Buffed** (340 -> 350 HP)
+- **Groditz Buffed** (340 -> 350 HP, no longer requires Armory to construct)
+- **Phantom Buffed** (Reduced the cost of Phantoms to $18, 15 Manpower and 5 Energy instead of $23, 5 Manpower, and 3 Energy)
 - **Pride Buffed** (6 -> 7 Damage)
 - **Gladiator Buffed** (15 -> 12 seconds construction time)
 - **New 'Scramble Angel Team' construction option** (Available from the War Sanctum, costs 30 Influence)
@@ -38,6 +39,7 @@ set correctly and ending up further away than the left side, creating a slight d
 
 - All visual effects (explosions, shot hit FX, meditec healing sprites) no longer block you from selecting a unit when attempting to left click on it
 - 50% Optimization improvement to mouseEvents when playing using Flash Player
+- You can now pick the rank icon you want others to see by hovering over it and scrolling. (You can only choose from icons you've unlocked. Rank up to unlock more!)
 - AI now no longer sends Meditecs, AA Sakatas, Chronite Tanks, Scouts or Marines into base range
 - New Monarchy theme has been added (Composed by me)
 - New commands /help & /mystats have been added to multiplayer lobby	

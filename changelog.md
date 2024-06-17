@@ -28,7 +28,7 @@ set correctly and ending up further away than the left side, creating a slight d
 - **Far Sniper Overhaul**<br/><br/>Reload Time: 90 -> 340 <br/>Projectile Speed: 30 -> 42 <br/>Range: 660 -> 618 <br/>Damage: 90 -> 350 <br/>Cost: 35 -> 40 Influence
 - - -
 - **Groditz Buffed** (340 -> 350 HP, no longer requires Armory to construct)
-- **Phantom Buffed** (Reduced the cost of Phantoms to $18, 15 Manpower and 5 Energy instead of $23, 5 Manpower, and 3 Energy)
+- **Phantom Buffed** (Reduced the cost of Phantoms to $18, 10 Manpower and 3 Energy instead of $23, 5 Manpower, and 3 Energy)
 - **Pride Buffed** (6 -> 7 Damage)
 - **Gladiator Buffed** (15 -> 12 seconds construction time)
 - **New 'Scramble Angel Team' construction option** (Available from the War Sanctum, costs 30 Influence)

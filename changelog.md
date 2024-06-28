@@ -2,7 +2,7 @@
 
 Developer Notes and Commentary on all changes are available at the very bottom of the changelog.
 
-**Last Updated: June 17th, 2024.**
+**Last Updated: June 28th, 2024.**
 
 # GAMEPLAY CHANGES
 - Multiplayer functionality has been restored completely! Fully working as intended along with a completely custom server.
@@ -16,6 +16,7 @@ Developer Notes and Commentary on all changes are available at the very bottom o
 - Five new gamemodes (3-Square, 8-Square Joker, Vast and Insurgency) have been added into multiplayer.
 - Added the ability to see how many units you currently have selected when selecting a group of units.
 - Added new 'Random' option to MP, giving you a random government each time.
+- Added a new Options menu to adjust scaling settings, volume of music & sound effects
 - Fixed 'right side advantage' where units had their target point (the spot where you shoot) not 
 set correctly and ending up further away than the left side, creating a slight disadvantage to left side players.
 
@@ -37,6 +38,7 @@ set correctly and ending up further away than the left side, creating a slight d
 # OTHER CHANGES:
 - Users with an _ in their name, alongside guests, can now talk.
 
+- Lowered the volume of the Armor Games intro sound effects
 - All visual effects (explosions, shot hit FX, meditec healing sprites) no longer block you from selecting a unit when attempting to left click on it
 - 50% Optimization improvement to mouseEvents when playing using Flash Player
 - You can now pick the rank icon you want others to see by hovering over it and scrolling. (You can only choose from icons you've unlocked. Rank up to unlock more!)

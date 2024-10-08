@@ -2,7 +2,7 @@
 
 Developer Notes and Commentary on all changes are available at the very bottom of the changelog.
 
-**Last Updated: June 28th, 2024.**
+**Last Updated: October 7th, 2024.**
 
 # GAMEPLAY CHANGES
 - Multiplayer functionality has been restored completely! Fully working as intended along with a completely custom server.
@@ -50,6 +50,7 @@ set correctly and ending up further away than the left side, creating a slight d
 - Fixed a bug where changing animation states of a unit while it is dying interrupts the death animation
 - Fixed Mission 1 saying Capitalist provides 20% resource bonus instead of 15%
 - Buffed Communist by fixing AoE not counting toward player kills, preventing them from getting a Communist payout
+- You can now ask your AI partner what government they are
 - Fixed a bug that made the order of which units appear in front or behind each other not work as intended
 - Fixed projectiles potentially overshooting a target slightly due to lag and/or frame skipping
 - Fixed a chat bug that caused the game to crash

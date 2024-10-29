@@ -4,6 +4,8 @@ Colony Revival Project is a project led by the community to allow you to play Co
 
 **Video Tutorial: https://www.youtube.com/watch?v=Ic6ckilmTZA**
 
+**Changelog of every change: https://github.com/SynthKittenDev/Colony-Revival-Project/blob/main/changelog.md**
+
 **CREDITS: DonutCat, chessmaster102, Xelor and a variety of others from the Colony Official Discord Server**
 
 **Colony Discord: https://discord.gg/rP8nhm8**

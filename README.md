@@ -6,7 +6,9 @@ Colony Revival Project is a project led by the community to allow you to play Co
 
 **Changelog of every change: https://github.com/SynthKittenDev/Colony-Revival-Project/blob/main/changelog.md**
 
-**CREDITS: DonutCat, chessmaster102, Xelor and a variety of others from the Colony Official Discord Server**
+**Official Colony Wiki: https://colonywiki.github.io/** 
+
+**CREDITS: DonutCat, chessmaster102, Xelor, Dynamite Ty, The Brickccentric and a variety of others from the Colony Official Discord Server**
 
 **Colony Discord: https://discord.gg/rP8nhm8**
 

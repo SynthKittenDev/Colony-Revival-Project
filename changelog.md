@@ -28,6 +28,19 @@ set correctly and ending up further away than the left side, creating a slight d
 
 
 # UNIT CHANGES:
+
+Detailed Information on the new units is available on the Colony Wiki: https://colonywiki.github.io/
+
+- **New 'Multipurpose Structure' building** (Precinct & Aerodrome)<br/><br/>Cost: 40 Money, 30 Manpower, 30 Energy
+- - -
+- **New 'Mirage' unit** (Available from the Aerodrome)
+- **New 'Shrike' unit** (Available from the Aerodrome)
+- **New 'Eidolon' unit** (Available from the Aerodrome, requires Armory)
+- - -
+- **New 'A26-Legionnaire' unit** (Available from the Precinct)
+- **New 'Missile Marine' unit** (Available from the Precinct)
+- **New 'Jötunn' unit** (Available from the Precinct, requires Armory)
+- - -
 - **New 'Angel' unit** (Available from the War Sanctum)<br/><br/>Reload Time: 16 <br/>Range: 120 <br/>Healing: 5 <br/>Cost: 3 Manpower, 6 Energy
 - - -
 - **New 'Mod. Groditz' unit** (Available from the Armory)<br/><br/>HP: 350 -> 500 <br/>Damage: 15 -> 19 <br/>Reload Time: 5 -> 3 <br/>Cost: 35 Influence
@@ -103,7 +116,7 @@ set correctly and ending up further away than the left side, creating a slight d
 
 **Bugfixing** - **SO** many bugs were littered around that were definitely impacting the playing experience of every player. Whether it was double spending by accident, going into negative resources, swapping to a new building or unit with hotkeys and losing your resources or being 'nulled' which basically ruined a match.. it was all so frustrating! I'm so happy I was able to fix every major issue that was plaguing the game and impacting the experience of new or returning players.
 
-**'Angel' Unit** - The new Angel unit was implemented to expand options for aiding air units. I thought it would be neat to introduce a new air option that could in some way aid other air units, and therefore, the "air marine" err, sorry, I mean the "angel" was made!
+**'Angel' Unit** - The new Angel unit was implemented to expand options for aiding air units. I thought it would be neat to introduce a new air option that could in some way aid other air units, and therefore, the "Angel" was made!
 
 **'Mod Groditz' Unit** - The new Groditz unit was implemented to provide a sensible cousin to the 'Mod. Phantom' that can be constructed from the Armory. I felt the Groditz needed some love, and this felt like it fit right in as if it truly belonged!
 - - -
@@ -125,7 +138,7 @@ Thank you to the entire Colony Community and the Official Colony Discord server 
 
 **Alpha (For creating this amazing community, seriously, if you didn't do this.. none of this would be here today.)**
 
-**Dynamite Ty (For creating the Mod. Groditz, S-Marine sprites and helping import the new Angel sprite. Thank you for your hard work!)**
+**Dynamite Ty (For creating the Eidolon, A-26-Legionnaire, Shrike, Mirage, Multipurpose Structure, Missile Marine, Jötunn, Mod. Groditz, S-Marine sprites and helping import the new Angel sprite. Additionally a lot of assistance with the Colony Wiki! Thank you for your hard work!)**
 
 **The Brickccentric (For providing the art for the Angel sprite, the new art is wonderful, thank you!)**
 

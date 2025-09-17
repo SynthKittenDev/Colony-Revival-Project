@@ -2,7 +2,7 @@
 
 Developer Notes and Commentary on all changes are available at the very bottom of the changelog.
 
-**Last Updated: October 7th, 2024.**
+**Last Updated: September 17th, 2025.**
 
 # GAMEPLAY CHANGES
 - Multiplayer functionality has been restored completely! Fully working as intended along with a completely custom server.
@@ -10,15 +10,21 @@ Developer Notes and Commentary on all changes are available at the very bottom o
 - Rework of the Colony Ranking System, implementing 35 new ranks and icons, new XP distribution, removed consecutive win bonus and more!
 - A large set of AI Improvements for every AI commander.
 - 2 new AI commanders, Cpt. Bjorn and Cpt. Haley which play Special Operations and Dual respectably.
-- A new hotkey was implemented as an alternative to double clicking, allowing you to select all units of the same type by hovering or selecting a unit, and then scrolling with your scroll wheel.
-- Two new hotkeys 'F' and 'G' were added to allow you to instantly go to the very left or the very right sides of the map. 
 - Camera movement overall speed has been greatly increased, allowing you to move around the map quicker.
-- Five new gamemodes (3-Square, 8-Square Joker, Vast and Insurgency) have been added into multiplayer.
+- Six new gamemodes (3-Square, 8-Square Joker, Vast, Insurgency and Classic) have been added into multiplayer.
 - Added the ability to see how many units you currently have selected when selecting a group of units.
 - Added new 'Random' option to MP, giving you a random government each time.
 - Added a new Options menu to adjust scaling settings, volume of music & sound effects
 - Fixed 'right side advantage' where units had their target point (the spot where you shoot) not 
 set correctly and ending up further away than the left side, creating a slight disadvantage to left side players.
+- Added the new "Multipurpose Structure" building. This structure combines two functionalities: the Precinct, a prison housing ground units, and the Aerodrome, which accommodates various air units. It can stand on its own or compliment both Post or Forge.
+- Customize your player colors! In online and quick play, you can now choose the color for yourself and other players! This affects unit colors, base colors and more.
+- Quick Play customization! Customize who you play against, their colors or if you just want to watch four AIs go at it!
+- Introduced new hotkeys:
+  - Press Tab with a selected unit to toggle between different unit types you control on the field.
+  - Press V with a selected unit to limit selection to that specific unit type until V is pressed again. This feature helps with precise unit selection and micro-management, especially when units are stacked in front or behind others.
+  - Scrolling with your scroll wheel over a unit you own will select all of your units; an alternative to double clicking.
+  - Press 'F' or 'G' to instantly go to the very left or the very right sides of the map.
 
 
 # UNIT CHANGES:
@@ -38,13 +44,14 @@ set correctly and ending up further away than the left side, creating a slight d
 # OTHER CHANGES:
 - Users with an _ in their name, alongside guests, can now talk.
 
+- A new button has been added on the homepage to bring you to the new Colony Wiki
 - Lowered the volume of the Armor Games intro sound effects
 - All visual effects (explosions, shot hit FX, meditec healing sprites) no longer block you from selecting a unit when attempting to left click on it
 - 50% Optimization improvement to mouseEvents when playing using Flash Player
 - You can now pick the rank icon you want others to see by hovering over it and scrolling. (You can only choose from icons you've unlocked. Rank up to unlock more!)
 - AI now no longer sends Meditecs, AA Sakatas, Chronite Tanks, Scouts or Marines into base range
 - New Monarchy theme has been added (Composed by me)
-- New commands /help & /mystats have been added to multiplayer lobby	
+- New commands /help & /mystats & /wiki have been added to multiplayer lobby	
 - Clicking 'No' on 'Are you sure you want to quit' popup no longer stops hotkeys from working without having to click back into the game
 - Minor alterations to the Groditz death animation
 - Fixed a bug where changing animation states of a unit while it is dying interrupts the death animation
@@ -79,9 +86,12 @@ set correctly and ending up further away than the left side, creating a slight d
 - Fixed A28-Gladiator walking animation
 - Fixed Far Sniper walking animation
 - Fixed Sniper walking animation
+ Fixed issue where pressing Tab or Alt-Tabbing caused hotkeys to stop working.
 - You will no longer be disconnected for being AFK in the multiplayer server for 15 minutes.
-- All other bugs that can impact your playing enjoyment have been fixed.
+- All other major bugs that can impact your playing enjoyment have been fixed.
 - All grammatical mistakes have been fixed.
+- Custom projectiles introduced for some new units.
+- Custom sounds introduced for some new units.
 
 # Developer Notes:
 
